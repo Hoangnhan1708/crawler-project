@@ -6,7 +6,7 @@ app.use(cors());
 
 
 const connection = mysql.createConnection({
-  host: '192.168.0.190', //Here
+  host: 'localhost', //Here
   user: 'root',
   password: '862202', // Thay đổi với mật khẩu của MySQL của bạn
   database: 'IT_CONFERENCES', // Thay đổi với tên cơ sở dữ liệu của bạn
