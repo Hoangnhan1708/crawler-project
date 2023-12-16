@@ -1,0 +1,218 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.grid {
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+
+.grid.wide {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main{
+    position: relative;
+    padding-bottom: 80px;
+    
+}
+/* Header */
+.header{
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header__name{
+    margin: 0;
+    font-weight: 550;
+    text-decoration: underline;
+}
+
+.header_github{
+    display:flex ;
+    align-items: center;
+}
+
+.header_github-logo-img{
+    width: 90px;
+    height: 60px;
+}
+
+.header_github-last-commit{
+    font-style: italic;
+    color: red;
+    font-weight: 500;
+}
+
+/* References container */
+.references-container{
+    background-color: #F2F2FA;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow:0px 0px 4px 4px #a0a0a0;
+}
+
+.references-container__link-container{
+
+}
+
+.references-container__link-heading{
+    font-weight: 300;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.references-container__link-list{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+
+.references-container__link{
+    color: black;
+}
+
+.references-container__requets-container{
+    color: red;
+}
+
+.references-container__requets-container p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.references-container__requets-link{
+    color: red;
+}
+
+/* Search input */
+.search-container{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #005CFF ;
+    border-radius: 16px;
+    align-items: center;
+}
+
+.search__category{
+    
+}
+
+#search__category-select{
+    margin: 10px 20px;
+    padding-right: 10px;
+    border: none;
+    border-right: 1px solid #005CFF;
+    outline: none;
+    font-size: 16px;
+}
+
+
+
+.search__input-container{
+    width: 100%;
+
+}
+
+.search__input{
+    margin: 10px 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.search__btn{
+    margin: 10px 20px;
+    border: none;
+    background-color: #fff;
+    font-size: 20px;
+    
+}
+
+.search__btn:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.no-item{
+    text-align: center;
+}
+
+
+/* Content */
+.content{
+    margin-top: 20px;
+}
+.conferences-list{
+    list-style: none;
+    
+}
+
+.conferences-item{
+    box-shadow:0px 0px 2px 2px #cfcfcf;
+    padding: 14px;
+    margin: 20px 0 ;
+}
+
+.conferences-item__title{
+    color: #005CFF;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.conferences-item__time-vendor{
+    color: #606266;
+    margin: 4px 0;
+    display: flex;
+    font-size: 18px;
+}
+
+.conferences-item__time{
+    margin-right: 4px;
+}
+
+.conferences-item__vendor{
+    
+}
+
+.conferences-item__des{
+    color: #606266;
+    font-size: 18px;
+}
+
+
+.footer{
+    background-color: #F2F2FA;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    height: 80px;
+}
+
+.footer__des{
+    font-style: italic;
+}

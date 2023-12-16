@@ -1,0 +1,4 @@
+https://www.youtube.com/watch?v=9IPlc-nKD1k&ab_channel=AdamGetbags
+https://stackoverflow.com/questions/60226370/certificate-error-when-connecting-to-sql-server
+https://stackoverflow.com/questions/33709807/how-to-connect-to-sql-server-with-windows-authentication-from-node-js-using-mssq
+https://stackoverflow.com/questions/17115632/microsoftodbc-driver-manager-data-source-name-not-found-and-no-default-drive
