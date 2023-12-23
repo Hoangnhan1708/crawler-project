@@ -33,6 +33,13 @@ app.get('/data', (req, res) => {
 app.get('/search', (req, res) => {
   const { category, term } = req.query;
 
+  
+  // Kiểm tra nếu term không có giá trị hoặc chỉ chứa ít hơn hai ký tự % thì trả về danh sách rỗng
+  if (!term || term.includes('%')) {
+    res.json([]);
+    return;
+  }
+
   // Sử dụng thích hợp tên cột dựa vào loại category và term để tìm kiếm
   const query = `SELECT * FROM CONFERENCES WHERE ${category} LIKE '%${term}%'`;
 
