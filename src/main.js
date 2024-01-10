@@ -5,11 +5,11 @@ const business = new Business()
 const ui = new UI()
 const searchInput = document.querySelector("#search__input")
 
-ui.loadAllConferences(business)
+ui.renderAllConferences(business)
 searchInput.oninput =  () => {
-    ui.loadAllSearchedConferences(business,searchInput.value)
+    ui.renderAllSearchedConferences(business,searchInput.value)
     if(searchInput.value == ""){
-        ui.loadAllConferences(business)
+        ui.renderAllConferences(business)
     }
 }
 

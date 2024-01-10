@@ -22,7 +22,7 @@ class UI{
           });
         }
       }
-    async loadAllConferences(business) {
+    async renderAllConferences(business) {
         try {
           const data = await business.loadAllConferences();
           this.render(data);
@@ -31,7 +31,7 @@ class UI{
         }
     }
 
-    async loadAllSearchedConferences(business,searchValue){
+    async renderAllSearchedConferences(business,searchValue){
         const cateInput = document.querySelector("#search__category-select")
         const category = cateInput.value;
         console.log(searchValue)
