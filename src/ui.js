@@ -34,7 +34,6 @@ class UI{
     async renderAllSearchedConferences(business,searchValue){
         const cateInput = document.querySelector("#search__category-select")
         const category = cateInput.value;
-        console.log(searchValue)
       try {
         const data = await business.loadSearchedConferences(category, searchValue);
         this.render(data);

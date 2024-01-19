@@ -2,10 +2,13 @@
 
 
 class Business {
+    // Khai báo async để sử dụng await bên trong
     async loadAllConferences() {
       var conferences =[]
         try {
-          const response = await fetch('http://localhost:3000/data'); //Here
+          // Khi gọi await thì đoạn code phía sẽ trở thành 1 Promise, chờ đến khi Promise đc
+          // resolve thì tiếp tục run
+          const response = await fetch('http://localhost:3000/data'); 
           const data = await response.json();
           
           data.forEach((item) => {
@@ -19,13 +22,16 @@ class Business {
 
     }
 
+    // Khai báo async để sử dụng await bên trong
     async loadSearchedConferences(category,searchValue) {
       var conferences =[]
         try {
-            const response = await fetch(`http://localhost:3000/search?category=${category}&term=${searchValue}`); //Here
+          // Khi gọi await thì đoạn code phía sẽ trở thành 1 Promise, chờ đến khi Promise đc
+          // resolve thì tiếp tục run
+            const response = await fetch(`http://localhost:3000/search?category=${category}&term=${searchValue}`); 
             const data = await response.json();
             
-            conferences.length = 0; // Clear existing conferences array
+            
             data.forEach((item) => {
               conferences.push(item);
             });
